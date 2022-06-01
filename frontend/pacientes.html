@@ -6,23 +6,27 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Prontuário Médico</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!--Link CSS-->
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+
     <!--Link Ionicon-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
+
     <header class="menu">
         <img class="logo" src="Img/cardiologist-animate.svg" alt="Logo-Empresa">
         <ion-icon class="perfil" name="person-circle-outline"></ion-icon>
     </header>
+
     <aside class="menu-lateral">
         <ul>
-            <a href="#">
+            <a href="index.html">
                 <li class="menu-itens">Home</li>
             </a>
-            <a href="#">
+            <a href="pacientes.html">
                 <li class="menu-itens">Pacientes</li>
             </a>
             <a href="#">
@@ -30,13 +34,41 @@
             </a>
         </ul>
     </aside>
-    <section class="container-1">
-        <h1 class="title">Cadastro de pacientes</h1>
-        <fieldset>
 
-        </fieldset>
+    <section class="container-1">
+        <div class="init">
+            <h1 class="title">Pacientes</h1>
+            <a href="Cadastrodepacientes.html">
+                <button class="botao">Adicionar</button>
+            </a>
+        </div>
+
+        <table>
+            <tr>
+                <th>Nome Completo</th>
+                <th>E-mail</th>
+                <th>Data de Nascimento</th>
+                <th>Ações</th>
+            </tr>
+
+            <tr>
+                <th>Kaio Henrique </th>
+                <th>Kaioeluanaforever@gmail.com</th>
+                <th>22/12/1984</th>
+                <th class="icones">
+                    <a href="#">
+                        <ion-icon class="criar" name="create-outline"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon class="criar2" name="trash-outline"></ion-icon>
+                    </a>
+                </th>
+            </tr>
+        </table>
     </section>
+
 </body>
+
 <script src='js/jquery.js'></script>
 
 </html>
